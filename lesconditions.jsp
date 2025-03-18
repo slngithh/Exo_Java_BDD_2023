@@ -4,11 +4,11 @@
     <title>Les conditions</title>
 </head>
 <body bgcolor=white>
-<h1>Exercices sur les conditions</h1>
+<h1>Partie 2 : les conditions</h1>
 <form action="#" method="post">
-    <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1"></p>
-    <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2"></p>
-    <p>Saisir la valeur 3 (pour l'exercice 1) : <input type="text" id="inputValeur" name="valeur3"></p>
+    <p>Saisir une valeur 1 : <input type="text" id="inputValeur" name="valeur1"></p>
+    <p>Saisir une valeur 2 : <input type="text" id="inputValeur" name="valeur2"></p>
+    <p>Saisir une valeur 3 : <input type="text" id="inputValeur" name="valeur3"></p>
     <p><input type="submit" value="Afficher"></p>
 </form>
 
@@ -31,7 +31,7 @@
         <p>Valeur 1 est égale à Valeur 2.</p>
     <% } %>
 
-<h2>Exercice 1 : Comparaison 1</h2>
+<h2>Exercice 1 : Comparaison </h2>
 <% if (valeur3 != null) { 
        int intValeur3 = Integer.parseInt(valeur3);
        // Trouver A et B peu importe l'ordre
@@ -40,20 +40,20 @@
 %>
     <p>A = <%= min %>, B = <%= max %>, C = <%= intValeur3 %></p>
     <% if (intValeur3 > min && intValeur3 < max) { %>
-        <p>Oui, C est compris entre A et B.</p>
+        <p>C est compris entre A et B.</p>
     <% } else { %>
-        <p>Non, C n'est pas compris entre A et B.</p>
+        <p>C n'est pas compris entre A et B.</p>
     <% }
 } %>
 
-<h2>Exercice 2 : Pair ou Impair ?</h2>
+<h2>Exercice 2 : Paire ou Impaire ?</h2>
 <%
     // Vérifier si valeur1 et valeur2 sont pair ou impair
-    String pairOuImpair1 = (intValeur1 % 2 == 0) ? "pair" : "impair";
-    String pairOuImpair2 = (intValeur2 % 2 == 0) ? "pair" : "impair";
+    String pairOuImpair1 = (intValeur1 % 2 == 0) ? "paire" : "impaire";
+    String pairOuImpair2 = (intValeur2 % 2 == 0) ? "paire" : "impaire";
 %>
-<p>Valeur 1 (<%= intValeur1 %>) est <%= pairOuImpair1 %>.</p>
-<p>Valeur 2 (<%= intValeur2 %>) est <%= pairOuImpair2 %>.</p>
+<p> La première valeur (<%= intValeur1 %>) est : <%= pairOuImpair1 %>.</p>
+<p> La deuxième valeur (<%= intValeur2 %>) est : <%= pairOuImpair2 %>.</p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>

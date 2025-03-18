@@ -52,8 +52,8 @@
     String pairOuImpair1 = (intValeur1 % 2 == 0) ? "paire" : "impaire";
     String pairOuImpair2 = (intValeur2 % 2 == 0) ? "paire" : "impaire";
 %>
-<p> La première valeur (<%= intValeur1 %>) est : <%= pairOuImpair1 %>.</p>
-<p> La deuxième valeur (<%= intValeur2 %>) est : <%= pairOuImpair2 %>.</p>
+<p> La première valeur (<%= intValeur1 %>) est <%= pairOuImpair1 %>.</p>
+<p> La deuxième valeur (<%= intValeur2 %>) est <%= pairOuImpair2 %>.</p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
